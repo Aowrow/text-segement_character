@@ -1,0 +1,23 @@
+# TTS服务配置
+api:
+  host: "127.0.0.1"
+  port: 9880
+
+# 模型配置
+models:
+  gpt_weights: "E:/gpt-sovits/GPT-SoVITS-v2-240821/GPT_weights/芙宁娜-e10.ckpt"
+  sovits_weights: "E:/gpt-sovits/GPT-SoVITS-v2-240821/SoVITS_weights/芙宁娜_e10_s290.pth"
+  ref_audio: "E:/gpt-sovits/1.wav" # 参考音频路径
+
+# 文本配置
+text:
+  input_file: "E:/gpt-sovits/test.txt"  # 输入文本文件路径
+  language: "zh"          # 文本语言
+  prompt_text: "不过，虽然我在枫丹有些人气，但名声只是身外之物"  # 提示文本
+  prompt_language: "zh"   # 提示文本语言
+  split_method: "cut2"    # 文本切分方法
+
+# 输出配置
+output:
+  dir: "E:/gpt-sovits/"           # 输出目录
+  format: "wav"          # 输出格式
